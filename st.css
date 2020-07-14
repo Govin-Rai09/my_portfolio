@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #171718;
+  font-family: "Metal Mania", cursive;
+  overflow-x: hidden;
+  position: relative;
+}
+main {
+  position: absolute;
+}
+#logo {
+  color: white;
+
+  text-decoration: none;
+}
+.nav {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0rem;
+  z-index: 3;
+  position: relative;
+}
+.line1,
+.line2,
+.line3 {
+  width: 3rem;
+  height: 3px;
+  margin: 5px;
+  background: wheat;
+  pointer-events: none;
+}
+.slide {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: antiquewhite;
+  background: #171718;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 3rem;
+  position: relative;
+}
+.st-img {
+  position: relative;
+  flex: 1;
+  flex-basis: 25rem;
+  overflow: hidden;
+}
+.me {
+  color: rgb(239, 139, 93);
+}
+.rm {
+  color: rgb(230, 203, 03);
+}
+.xt {
+  color: rgb(97, 207, 121);
+}
+.des h2 {
+  font-size: 3rem;
+}
+.des p {
+  padding: 2rem 0;
+  font-size: 1rem;
+  color: lightcyan;
+}
+.exp {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  color: greenyellow;
+  border: 1px solid white;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+.burger {
+  cursor: pointer;
+}
+.links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+.links h3 {
+  padding: 2rem 0rem;
+  color: gray;
+}
+.contact {
+  flex-basis: 30rem;
+}
+.contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+  color: olive;
+}
+.contact p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #171718;
+  top: -15%;
+  left: 0;
+}
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  transition-property: background transform;
+  transform-origin: 75% 75%;
+}
+.cursor.nav-active {
+  background: rgb(52, 116, 168);
+  transform: scale(3);
+
+  /* opacity: 0.7; */
+}
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+.cursor.exp-active {
+  background: white;
+  transform: scale(3);
+}
+.cur-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.title-swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: darken;
+  transform: translateY(100%);
+}
+.t1 {
+  background: rgb(52, 116, 168);
+}
+.t2 {
+  background: rgb(212, 97, 141);
+}
+.t3 {
+  background: rgb(105, 206, 164);
+}
+body.hide {
+  overflow: hidden;
+}
+/* other pages */
+.go1,
+.go2,
+.go3 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.go-img {
+  height: 60vh;
+  flex-basis: 30rem;
+}
+.go-txt {
+  flex: 1;
+  position: relative;
+  flex-basis: 25rem;
+}
+.go-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.go-txt h1 {
+  font-size: 3rem;
+  padding: 3rem 0rem;
+}
+.go1 h1 {
+  color: rgb(239, 139, 93);
+}
+.go2 h1 {
+  color: rgb(86, 188, 214);
+}
+.go3 h1 {
+  color: rgb(221, 219, 71);
+}
+.go-txt ul {
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: grey;
+}
+.go-txt p {
+  font-size: 1.5rem;
+  padding: 2rem 1rem;
+  color: rgb(211, 182, 198);
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(-100%);
+}
+.swipe1 {
+  background: rgb(223, 120, 209);
+  z-index: 5;
+}
+.swipe2 {
+  background: rgb(226, 126, 33);
+  z-index: 4;
+}
+.swipe3 {
+  background: rgb(83, 154, 202);
+  z-index: 3;
+}
+
+.links p {
+  font-size: 1rem;
+  color: burlywood;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+.links.po {
+  text-transform: lowercase;
+}
